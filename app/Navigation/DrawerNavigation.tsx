@@ -3,8 +3,8 @@ import { View } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { useNavigation } from '@react-navigation/native';
 import { Button } from '@react-navigation/elements';
-import Index from '../tabs';
-
+import Index from '../Index';
+ 
  
  
 
@@ -17,8 +17,11 @@ export default function DrawerNavigation() {
          drawerStyle: {
       backgroundColor: "#ffff", 
     },
+    headerStyle:{
+          backgroundColor: "#ADB5D6",
+    }
       }}>
         <Drawer.Screen name="Home" component={Index} />
-      </Drawer.Navigator>
+       </Drawer.Navigator>
   );
 }
